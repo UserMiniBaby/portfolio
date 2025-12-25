@@ -66,7 +66,7 @@ export default function App() {
                 className="relative text-sm font-medium text-white/80 hover:text-white transition"
               >
                 {item}
-                <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-pink-500 transition-all duration-300 hover:w-full" />
+                <span className="absolute left-0 -bottom-1 w-0 h-px bg-pink-500 transition-all duration-300 hover:w-full" />
               </button>
             ))}
 
@@ -90,7 +90,7 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
               transition={{ duration: 0.25 }}
-              className="fixed top-[88px] left-0 w-full bg-black/95 backdrop-blur-md border-t border-white/10 md:hidden z-40"
+              className="fixed top-22 left-0 w-full bg-black/95 backdrop-blur-md border-t border-white/10 md:hidden z-40"
             >
               <div className="flex flex-col px-6 py-8 gap-6">
                 {[
@@ -116,7 +116,7 @@ export default function App() {
         </AnimatePresence>
       </nav>
 
-      <main className="relative z-10 pt-[96px]">
+      <main className="relative z-10 pt-24">
         {/* Hero Section */}
         <section
           id="portfolio"
@@ -137,7 +137,7 @@ export default function App() {
                 />
               </div>
             </div>
-            <h1 className="text-5xl md:text-[100px] font-black mb-4 tracking-tighter leading-none bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-[100px] font-black mb-4 tracking-tighter leading-none bg-linear-to-b from-white to-gray-500 bg-clip-text text-transparent">
               Aunchana <br className="md:hidden" /> Kongmanee!
             </h1>
             <p className="text-lg md:text-2xl font-medium mb-8 text-gray-300">
@@ -150,7 +150,7 @@ export default function App() {
             <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: "100px" }}
-              className="h-[1px] bg-pink-500 mx-auto mb-8"
+              className="h-px bg-pink-500 mx-auto mb-8"
             />
             <p className="max-w-xl mx-auto text-gray-400 tracking-[0.2em] uppercase text-xs md:text-sm mb-10">
               | Building Frontend Projects OGS |
@@ -200,7 +200,7 @@ export default function App() {
                 </motion.div>
               ))}
             </div>
-            <div className="mt-12 p-8 border border-pink-500/20 rounded-3xl bg-gradient-to-br from-pink-500/5 to-transparent">
+            <div className="mt-12 p-8 border border-pink-500/20 rounded-3xl bg-linear-to-br from-pink-500/5 to-transparent">
               <h3 className="text-2xl font-bold mb-2">
                 Loei Rajabhat University
               </h3>
@@ -225,7 +225,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             className="relative border-l border-white/10 pl-8 ml-4"
           >
-            <div className="absolute w-4 h-4 bg-pink-500 rounded-full -left-[9px] top-0 shadow-[0_0_15px_rgba(236,72,153,0.5)]" />
+            <div className="absolute w-4 h-4 bg-pink-500 rounded-full -left-2.25 top-0 shadow-[0_0_15px_rgba(236,72,153,0.5)]" />
             <div className="flex flex-col md:flex-row justify-between items-start mb-6 gap-2">
               <div>
                 <h3 className="text-2xl font-bold text-white italic">
@@ -310,7 +310,7 @@ export default function App() {
                 whileHover={{ y: -10 }}
                 className="group bg-[#0A0A0A] border border-white/10 rounded-3xl overflow-hidden hover:border-pink-500/50 transition-all duration-500 shadow-2xl"
               >
-                <div className="relative w-full overflow-hidden bg-[#111] flex items-center justify-center p-2 min-h-[250px]">
+                <div className="relative w-full overflow-hidden bg-[#111] flex items-center justify-center p-2 min-h-62.5">
                   <div
                     className="absolute inset-0 opacity-20 blur-2xl scale-150 transition-transform duration-700 group-hover:scale-110"
                     style={{
@@ -349,7 +349,7 @@ export default function App() {
         <motion.div
           whileInView={{ opacity: 1, scale: 0.95 }}
           initial={{ opacity: 0, scale: 0.8 }}
-          className="max-w-4xl mx-auto bg-gradient-to-b from-white/10 to-transparent p-16 rounded-[4rem] text-center border border-white/10"
+          className="max-w-4xl mx-auto bg-linear-to-b from-white/10 to-transparent p-16 rounded-[4rem] text-center border border-white/10"
         >
           <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4">
             Contact
